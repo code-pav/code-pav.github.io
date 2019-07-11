@@ -384,3 +384,67 @@ footer {
     color: red;
 }
 
+@media only screen and (max-width: 600px) {
+    body {
+        background: black;
+    }
+
+    section,
+    footer {
+        display: none;
+    }
+    .rotate-phone {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 3vh;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        padding: 4vh 4vw;
+        margin-top: 25vh;
+    }
+
+    .rotate-phone p {
+        text-align: center;
+        color: white;
+    }
+
+    .rotate-phone svg {
+        margin-top: 5vh;
+        width: 20vw;
+        height: 20vh;
+        fill: red;
+        /* background: red; */
+        /* background: url("../svg/mobile-alt.svg") transparent no-repeat; */
+        animation: rotate 5s infinite alternate linear;
+        animation-delay: 1s;
+    }
+
+    @keyframes rotate {
+        0% {
+            fill: red;
+            transform: rotate(0deg);
+        }
+        30% {
+            fill: red;
+            transform: rotate(0deg);
+        }
+        40% {
+            fill: green;
+            transform: rotate(90deg);
+        }
+        100% {
+            fill: green;
+            transform: rotate(90deg);
+        }
+    }
+    .code-pav {
+        position: absolute;
+        bottom: 2vh;
+        color: white;
+        font-size: 3vw;
+    }
+}
+
