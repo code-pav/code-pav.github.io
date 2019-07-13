@@ -277,22 +277,22 @@ li {
 footer {
     position: fixed;
     box-sizing: border-box;
-    bottom: -22vh;
+    bottom: 2vh;
     /* bottom: 0vh; */
     background: rgba(0, 0, 0, 0);
     width: 40%;
     left: 30%;
-    height: 20vh;
+    height: 15vh;
     /* box-shadow: 0 0 0.5vw white; */
     border-radius: 0.5vw;
 }
 
-.footer-button {
+/* .footer-button {
     position: relative;
     width: 3vw;
     height: 3vw;
     border-radius: 50%;
-    background: url(../img/svg/chevron-up.svg) transparent no-repeat;
+    background: url("../svg/chevron-up.svg") transparent no-repeat;
     background-size: 80% 80%;
     background-position: 40% 10%;
     float: left;
@@ -303,10 +303,10 @@ footer {
 }
 .footer-button:hover {
     opacity: 1;
-}
-.move-button {
+} */
+/* .move-button {
     transform: rotate(180deg);
-}
+} */
 
 .hidden {
     display: none;
@@ -331,11 +331,12 @@ footer {
     cursor: default;
     border: none;
     user-select: none;
+    resize: none;
 }
 
 .badge {
-    width: 6vw;
-    height: 6vw;
+    width: 3vw;
+    height: 3vw;
     background: rgb(255, 255, 255);
     margin: 0.5vw;
     border-radius: 50%;
