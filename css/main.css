@@ -409,7 +409,7 @@ footer {
         height: 100vh;
         flex-direction: column;
         padding: 4vh 4vw;
-        margin-top: 25vh;
+        padding-top: 25vh;
         overflow: hidden;
     }
 
@@ -425,8 +425,7 @@ footer {
         fill: red;
         /* background: red; */
         /* background: url("../svg/mobile-alt.svg") transparent no-repeat; */
-        animation: rotate 5s infinite alternate linear;
-        animation-delay: 1s;
+        animation: rotate 3.5s infinite alternate linear;
     }
 
     @keyframes rotate {
@@ -434,11 +433,11 @@ footer {
             fill: red;
             transform: rotate(0deg);
         }
-        30% {
+        20% {
             fill: red;
             transform: rotate(0deg);
         }
-        40% {
+        30% {
             fill: green;
             transform: rotate(90deg);
         }
