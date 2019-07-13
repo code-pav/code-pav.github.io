@@ -382,14 +382,46 @@ footer {
     cursor: default;
 }
 
-.link {
+/* .link {
     font-size: 2vw;
     margin-top: 2vw;
     color: red;
-}
+} */
 
 .rotate-phone {
     display: none;
+}
+
+.link {
+    font-size: 4vh;
+    margin-top: 2vh;
+    padding: 1vh 1vw;
+    display: inline-block;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    z-index: 10;
+    box-shadow: none;
+}
+
+.link::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background: white;
+    bottom: -5%;
+    left: 0px;
+    width: 100%;
+    height: 10%;
+    transition: 0.2s;
+    z-index: -1;
+}
+
+.link:hover:before {
+    height: 105%;
+}
+.link:hover {
+    color: black;
 }
 @media only screen and (max-width: 600px) {
     body {
